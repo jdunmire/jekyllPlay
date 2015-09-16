@@ -56,10 +56,15 @@ large waste of time selecting images.
 
 Disqus section for comments on each blog post.
 
-### [mdl-jekyll](http://getaclue.github.io/mdl-jekyll/)
-_Material Design Lite_, but mainly through the shapes, colors, and
-typography. I like the content on the About page: links and credits.
+The source has not been updated in 2 years and there are no installation
+instructions aside from using Prose.io
 
+__DISCARDED__
+
+
+### [mdl-jekyll](http://getaclue.github.io/mdl-jekyll/)
+_Material Design Lite_, [(MDL)](http://www.getmdl.io/index.html), is part of the
+[Google /Web tools](https://developers.google.com/web/tools/?hl=en)
 
 
 
