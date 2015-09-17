@@ -1,28 +1,41 @@
 # jekyllPlay
 Experiments with a static website
 
+I am looking for a template and style to support a large project that
+will have several parts including: hardware design and documentation, firmware,
+infrastructure software, and a blog (or perhaps multiple blogs) to keep
+track of what I've worked on.  Feedback and comments may become part of
+the project- it would be great if I could interest others in the end
+product.
+
+It needs to be simple for me to use so that I don't end up focusing on
+the style.
+
+
+## Themes I tried
 After looking through the sample themes (see below) I selected 
   * [slim pickens](http://chrisanthropic.github.io/slim-pickins-jekyll-theme/#toggleMenu)
   * [Code Folio](http://tokkonopapa.bitbucket.org/)
+and
   * [mdl-jekyll](http://getaclue.github.io/mdl-jekyll/)
 
 for further evaluation. I downloaded each of them and tried a sample
-deploy. Code Folio hasn't been updated in 2 years, is missing
+deploy. Code Folio hasn't been updated in 2 years and is missing
 installation instructions, aside from using Prose.io. So I dropped it.
 
 slim-pickens required a lot of extra ruby packages and the use of
-rakefile. It isn't really designed for simple deployment on !GitHub. So
-I dropped it.
+rake. It is focused on S3 and isn't really designed for simple
+deployment on GitHub. So I dropped it.
 
 mdl-jekyll worked, but the color scheme is garish to my eyes. I tried
 the [custom theme builder](http://www.getmdl.io/customize/index.html)
 but couldn't come up with anything much better.
 
-Reading the [mdl-jekyll FAQ](http://www.getmdl.io/faq/index.html) I
-concluded that this is still new with a lot of work-in-progress. It
-replaces much of Bootstrap, but doesn't provide all the features. So I
-conclude that if I'm going to use a style that is this heavy, I may as
-well go with [solid](http://ojs.xyz/solid-jekyll/), which is Bootstrap.
+Reading the [mdl-jekyll FAQ](http://www.getmdl.io/faq/index.html) it
+appears that this is still fairly new. It replaces much of Bootstrap,
+but doesn't provide all the features. So I conclude that if I'm going to
+use a style that is this heavy, I may as well go with
+[solid](http://ojs.xyz/solid-jekyll/), which is Bootstrap.
 
 
 ## Themes I considered
@@ -30,12 +43,6 @@ I used the [Jekyll Themes
 list](https://github.com/jekyll/jekyll/wiki/Themes) at
 [GitHub](https://github.com) as the starting point and selected the
 following for further consideration.
-
-I am looking for a style to support a large project that will have
-several parts: hardware design and documentation, firmware,
-infrastructure software, and blog to keep track of what I've worked on.
-Feedback and comments may become part of the project- it would be great
-if I could interest others in the end product.
 
 ### [Incorporated](http://incorporated.sendtoinc.com/)
 Pretty and eye-catching, but the top block is a sea of buttons. No clear
@@ -98,6 +105,6 @@ While the files in {{{gh-pages}}} are processed by Jekyll, if there are
 no Jekyll directives, configurations, etc. they the files are served
 un-modified (AFAICT). That means that any static generator could be used
 and the results of the generation could be committed to the
-{{{gh-pages}}} branch at which point they will be served by !GitHub.
+{{{gh-pages}}} branch at which point they will be served by GitHub.
 
 
