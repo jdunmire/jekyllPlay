@@ -1,5 +1,29 @@
 # jekyllPlay
-Experiment with static website
+Experiments with a static website
+
+After looking through the sample themes (see below) I selected 
+  * [slim pickens](http://chrisanthropic.github.io/slim-pickins-jekyll-theme/#toggleMenu)
+  * [Code Folio](http://tokkonopapa.bitbucket.org/)
+  * [mdl-jekyll](http://getaclue.github.io/mdl-jekyll/)
+
+for further evaluation. I downloaded each of them and tried a sample
+deploy. Code Folio hasn't been updated in 2 years, is missing
+installation instructions, aside from using Prose.io. So I dropped it.
+
+slim-pickens required a lot of extra ruby packages and the use of
+rakefile. It isn't really designed for simple deployment on !GitHub. So
+I dropped it.
+
+mdl-jekyll worked, but the color scheme is garish to my eyes. I tried
+the [custom theme builder](http://www.getmdl.io/customize/index.html)
+but couldn't come up with anything much better.
+
+Reading the [mdl-jekyll FAQ](http://www.getmdl.io/faq/index.html) I
+concluded that this is still new with a lot of work-in-progress. It
+replaces much of Bootstrap, but doesn't provide all the features. So I
+conclude that if I'm going to use a style that is this heavy, I may as
+well go with [solid](http://ojs.xyz/solid-jekyll/), which is Bootstrap.
+
 
 ## Themes I considered
 I used the [Jekyll Themes
@@ -27,7 +51,9 @@ __DISCARDED__
 
 ### [solid](http://ojs.xyz/solid-jekyll/)
 As it says, 'Eye-catching Bootstrap 3 Theme'. I do have some familiarity
-with Bootstrap, so it is a contender. Ultimately __DISCARDED__ 
+with Bootstrap, so it is a contender. Initially DISCARDED, but in
+the end this is my __selected starting theme__.
+
 
 ### [skinny bones](https://mmistakes.github.io/skinny-bones-jekyll/)
 The use instructions appear to be good and there are lots of hooks for
@@ -66,5 +92,12 @@ __DISCARDED__
 _Material Design Lite_, [(MDL)](http://www.getmdl.io/index.html), is part of the
 [Google /Web tools](https://developers.google.com/web/tools/?hl=en)
 
+
+## Other Notes
+While the files in {{{gh-pages}}} are processed by Jekyll, if there are
+no Jekyll directives, configurations, etc. they the files are served
+un-modified (AFAICT). That means that any static generator could be used
+and the results of the generation could be committed to the
+{{{gh-pages}}} branch at which point they will be served by !GitHub.
 
 
